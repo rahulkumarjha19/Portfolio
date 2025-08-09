@@ -1,0 +1,505 @@
+body {
+  background: rgba(0, 0, 0, 0.871);
+  color: white;
+  font-family: serif;
+}
+section {
+  width: 100%;
+  padding-left: 0.5rem;
+}
+.navbar {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 2px rgba(128, 128, 128, 1);
+  background-color: black;
+
+  position: fixed; /* ← Fix at top */
+  top: 0; /* ← Attach to top */
+  left: 0;
+  z-index: 1;
+}
+.prof {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 0.4rem;
+}
+.profile_icon {
+  font-size: 2.2rem;
+}
+.title {
+  font-size: 1.9rem;
+  cursor: context-menu;
+}
+.nav_icons {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  gap: 0.9rem;
+  position: sticky;
+}
+.nav_a:hover {
+  color: blueviolet;
+}
+.git_hub {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+
+  align-items: center;
+  padding-right: 0.4rem;
+}
+.github {
+  width: 8rem;
+  font-size: 1rem;
+  height: 2.5rem;
+  border: 1px solid blueviolet;
+  border-radius: 1.5rem;
+  background: -webkit-linear-gradient(
+    225deg,
+    rgb(132, 0, 255) 0%,
+    rgb(230, 0, 255) 100%
+  );
+  color: white;
+  cursor: pointer;
+}
+.github:hover {
+  color: black;
+}
+.sun {
+  font-size: 1.5rem;
+  color: white;
+}
+.hamburgur {
+  display: none;
+}
+@media (max-width: 765px) {
+  .nav_icons {
+    display: none;
+  }
+  .sun {
+    display: none;
+  }
+  .hamburgur {
+    display: block;
+    font-size: 1.5rem;
+    color: white;
+    margin-right: 1rem;
+  }
+  .github {
+    display: none;
+  }
+}
+@media (max-width: 890px) {
+  .nav_icons {
+    font-size: 1.3rem;
+  }
+}
+
+/* Content area started */
+.content_area {
+  font-family: sans-serif;
+  text-align: justify;
+  padding: 20px;
+  margin-top: 60px;
+  font-size: 17px;
+
+  overflow-y: auto;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+h1 {
+  font-size: 45px;
+}
+.profession h2 {
+  font-size: 30px;
+}
+.intro {
+  width: 50%;
+}
+.image {
+  margin-top: 20px;
+  margin-left: 200px;
+}
+.img {
+  height: 20rem;
+  width: 25rem;
+  border-radius: 70%;
+}
+.full_stack {
+  color: blueviolet;
+}
+.p_para {
+  font-size: 20px;
+  opacity: 0.5;
+}
+.resume {
+  width: 200px;
+  height: 50px;
+  border: 1px solid blueviolet;
+  border-radius: 50px;
+  background: -webkit-linear-gradient(
+    225deg,
+    rgb(132, 0, 255) 0%,
+    rgb(230, 0, 255) 100%
+  );
+  color: white;
+  font-size: 16px;
+
+  cursor: pointer;
+}
+.resume:hover {
+  color: black;
+}
+
+@media (max-width: 1256px) {
+  .content {
+    flex-direction: column-reverse;
+  }
+  .image {
+    margin: 1rem auto;
+  }
+  .intro {
+    width: 100%;
+  }
+}
+@media (max-width: 470px) {
+  .image {
+    margin: 1rem auto;
+  }
+  .img {
+    height: 200px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 890px) {
+  .profession {
+    text-align: center;
+  }
+  .resume_div {
+    display: flex;
+    justify-content: center;
+  }
+}
+.skill {
+  text-align: center;
+  margin: 1rem;
+}
+.here {
+  font-size: 1.3rem;
+  opacity: 0.7;
+}
+.skill_div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+}
+.skill_image {
+  display: flex;
+  flex-wrap: wrap;
+}
+.frontend {
+  border: 3.2px solid black;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(255, 255, 255, 0.215);
+
+  width: 32rem;
+  border-radius: 2rem;
+
+  font-size: 1.3rem;
+}
+.frontend_inside {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.down_inside {
+  display: flex;
+  gap: 1rem;
+}
+.fronted_content {
+  border: 0.1rem solid rgba(137, 43, 226, 0.89);
+  width: 8.5rem;
+  height: 3.5rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: center;
+}
+.fronted_img {
+  height: 2rem;
+  width: 2rem;
+}
+.AI_inside {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+/* ........Projects........... */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.projects_area {
+  text-align: center;
+  margin: 1rem;
+}
+.project_para {
+  font-size: 1.3rem;
+  opacity: 0.5;
+}
+.project1 {
+  background-color: rgba(128, 128, 128, 0.148);
+  border: 0.1rem solid black;
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.408);
+  width: 21rem;
+  border-radius: 3rem;
+
+  margin: 6px;
+}
+.project1:hover {
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(255, 255, 255, 0.544);
+}
+.spotify_img {
+  width: 15rem;
+  height: 14rem;
+  margin: 1rem;
+}
+@media (max-width: 550px) {
+  .spotify_img {
+    width: 10rem;
+    height: 10rem;
+    margin: 0.8rem;
+  }
+}
+.resource {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.resources_content {
+  border: 2px solid blueviolet;
+  width: 4rem;
+  border-radius: 1rem;
+  color: blueviolet;
+  font-size: 1.2rem;
+}
+.project1_heading {
+  margin: 0rem 1rem;
+  text-align: start;
+}
+.project1_body {
+  text-align: start;
+  margin: 0rem 1rem;
+  padding: 1rem;
+}
+.spotify_link {
+  color: orange;
+  opacity: 1;
+
+  font-size: 2rem;
+  text-decoration: none;
+}
+.spotify_link:hover {
+  color: blueviolet;
+}
+/* .......Educational Area...... */
+.education_area {
+  text-align: center;
+  padding: 1rem;
+}
+.education_para {
+  font-size: 1.2rem;
+  opacity: 0.6;
+}
+.educations {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+  gap: 1.2rem;
+}
+.education1 {
+  border: 0.1rem solid blueviolet;
+  border-radius: 1rem;
+  width: 37rem;
+
+  padding: 0.5rem;
+
+  background-color: rgba(128, 128, 128, 0.215);
+}
+.pce_img {
+  width: 4rem;
+  height: 4rem;
+  margin-top: 0.7rem;
+  border-radius: 20%;
+}
+.pce_heading {
+  display: flex;
+  gap: 0.7rem;
+
+  text-align: start;
+}
+.educatio1_body {
+  text-align: start;
+  padding-left: 0.5rem;
+  opacity: 0.8;
+}
+/* ..................................ChatGPT............... */
+* {
+  box-sizing: border-box;
+}
+
+body,
+html,
+main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+section {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+  .image,
+  .intro {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+
+  .img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .resume_div {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* ..................................ChatGPT..END............... */
+/* ............ Contact......... */
+.contact_heading {
+  text-align: center;
+}
+.contact_heading h2 {
+  font-size: 3rem;
+}
+.contact_heading p {
+  font-size: 1.2rem;
+  opacity: 0.6;
+}
+.contact_body {
+  width: 40rem;
+
+  border-radius: 1rem;
+  border: 0.1rem solid black;
+  background-color: black;
+  padding: 1.5rem;
+}
+.email {
+  background-color: black;
+  color: white;
+  height: 3rem;
+  border: 0.1rem solid white;
+  border-radius: 1rem;
+  text-align: start;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+
+  margin-bottom: 1rem;
+  opacity: 0.7;
+}
+.forms {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 95%;
+  max-width: 600px;
+}
+.text_area {
+  background-color: black;
+  border: 0.1rem solid white;
+  border-radius: 1rem;
+  color: white;
+  font-size: 1.4rem;
+  padding: 1rem;
+
+  opacity: 0.7;
+  font-family: inherit;
+}
+.submit {
+  margin-top: 1rem;
+  height: 3rem;
+  font-size: 1.3rem;
+  background: -webkit-linear-gradient(
+    225deg,
+    rgb(132, 0, 255) 0%,
+    rgb(230, 0, 255) 100%
+  );
+  color: white;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.submit:hover {
+  color: black;
+}
+.last {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+.last_nav {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.4rem;
+}
+@media (max-width: 720px) {
+  .last_nav {
+    font-size: 1.1rem;
+  }
+}
+.navs_a {
+  cursor: pointer;
+}
+.navs_a:hover {
+  color: blueviolet;
+}
+.copy_right_div {
+  text-align: start;
+  margin: 1rem;
+}
+.linkdin:hover {
+  opacity: 0.5;
+}
+@media (max-width: 375px) {
+  .last_nav {
+    gap: 0.5rem;
+  }
+}
